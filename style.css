@@ -62,3 +62,9 @@
   .show {
     display: block;
   }
+
+  /* PADDING + MARGIN ADJUSTMENT */
+
+  iframe {
+    margin-top: 40px;
+  }
