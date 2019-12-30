@@ -1,6 +1,11 @@
+  /* GENERAL STYLE */
+  body {
+    /* background-color: black; */
+  }
+
 /* NAVIGATION BAR */
 .navbar {
-    background-color: #333;
+    background-color: rgb(0, 0, 0);
     font-family: Arial, Helvetica, sans-serif;
     position: fixed;
     top: 0;
@@ -64,7 +69,10 @@
   }
 
   /* PADDING + MARGIN ADJUSTMENT */
-
   iframe {
-    margin-top: 40px;
+    margin-top: 45px;
+  }
+
+  h1 { /* REMOVE LATER */
+    margin-top: 45px;
   }
