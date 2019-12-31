@@ -5,8 +5,9 @@ body {
   background-image: linear-gradient(to bottom, rgba(255,255,255,0.5),
      rgba(0,0,0,0)), url(img/test_square.png);
   background-repeat: no-repeat;
-  background-position: bottom right;
+  background-position: cover;
   background-attachment: fixed;
+  margin: 0;
   overflow-y: hidden; /* Disables vertical scrolling */
 }
   
@@ -66,15 +67,15 @@ body {
   text-align: left;
 }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
 
-  /* PADDING + MARGIN ADJUSTMENT ((NEEDS FIX)) */
+/* PADDING + MARGIN ADJUSTMENT ((NEEDS FIX)) */
   iframe {
     margin-top: 60px;
   }
@@ -90,24 +91,7 @@ body {
      border: 0;
      height: 95%;
      left: 10vw;
-     position: absolute; /* position: fixed; */
+     position: absolute;
      top: 10px;
      width: 80%;
   }
-
-/* TEST - SPLASH
-  #app {
-    height: 100vh;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-  }
-
-  #wrapper {
-    text-align: center;
-  } */
