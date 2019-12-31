@@ -1,6 +1,11 @@
   /* GENERAL STYLE */
   body {
     /* background-color: black; */
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0.5),
+      rgba(0,0,0,0)), url(img/test_square.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
   }
 
 /* NAVIGATION BAR */
@@ -68,11 +73,40 @@
     display: block;
   }
 
-  /* PADDING + MARGIN ADJUSTMENT */
+  /* PADDING + MARGIN ADJUSTMENT ((NEEDS FIX)) */
   iframe {
     margin-top: 45px;
   }
 
-  h1 { /* REMOVE LATER */
-    margin-top: 45px;
+  /* TEST - SPLASH */
+  #app {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+
+  #wrapper {
+    text-align: center;
+  }
+
+/* RESPONSIVE IFRAME */
+  .iframe-container {
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+  }
+   
+  .iframe-container iframe {
+     border: 0;
+     height: 90%;
+     left: 0;
+     position: absolute;
+     top: 10px;
+     width: 80%;
   }
