@@ -8,7 +8,9 @@ body {
   background-position: cover;
   background-attachment: fixed;
   margin: 0;
-  overflow-y: hidden; /* Disables vertical scrolling */
+  @media screen and (min-width: 760px){ /* Desktop only */
+    overflow-y: hidden; /* Disables vertical scrolling */
+  }
 }
   
 /* NAVIGATION BAR */
@@ -76,7 +78,7 @@ body {
   }
 
 /* PADDING + MARGIN ADJUSTMENT ((NEEDS FIX)) */
-  iframe, .grid-container {
+  iframe {
     margin-top: 60px;
   }
 
